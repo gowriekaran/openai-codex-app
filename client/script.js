@@ -11,11 +11,11 @@ function loader(element) {
 
   loadInterval = setInterval(() => {
     element.textContent += ".";
-  }, 300);
 
-  if (element.textContent === "....") {
-    element.textContent = "";
-  }
+    if (element.textContent === "....") {
+      element.textContent = "";
+    }
+  }, 300);
 }
 
 function typeText(element, text) {
